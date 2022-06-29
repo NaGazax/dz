@@ -1,12 +1,10 @@
-﻿Console.Write("Введите первое число:");
+﻿Console.Write("Введите число:");
 int number1 = Convert.ToInt32(Console.ReadLine());
-Console.Write("Введите второе число:");
-int number2 = Convert.ToInt32(Console.ReadLine());
-if (number1 > number2)
+if (number1 % 2 ==0)
 {
-    Console.WriteLine("Первое - большее,второе - меньшее");
+    Console.WriteLine("Число чётное");
 }
 else 
 {
-   Console.WriteLine("Второе - большее,первое - меньшее"); 
+   Console.WriteLine("Число нечётное"); 
 }
