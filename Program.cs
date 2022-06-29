@@ -1,10 +1,9 @@
-﻿Console.Write("Введите число:");
-int number1 = Convert.ToInt32(Console.ReadLine());
-if (number1 % 2 ==0)
+﻿Console.Write("Введите число N:");
+int N = Convert.ToInt32(Console.ReadLine());
+int negN = 0;
+while (negN <= N )
 {
-    Console.WriteLine("Число чётное");
+    Console.WriteLine(negN);
+    negN = negN + 2;
 }
-else 
-{
-   Console.WriteLine("Число нечётное"); 
-}
+
