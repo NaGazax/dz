@@ -1,8 +1,13 @@
-﻿int number = new Random().Next(100,1000);
-Console.WriteLine("Рандомное число:" + number);
-int digitOne = number / 100;
-int digitThree = number % 10;
-int digitTwo = (number - 100 * digitOne - digitThree) / 10;
-Console.WriteLine($"Второе число: {digitTwo}");
-
-
+﻿Console.WriteLine("Введите номер дня недели: ");
+int dayNumber = Convert.ToInt32(Console.ReadLine());
+if ( dayNumber >= 1 && dayNumber <= 7 );
+{
+    if (dayNumber >= 6 && dayNumber <= 7)
+    {
+       Console.WriteLine("Выходной"); 
+    }
+    else 
+    { 
+       Console.WriteLine("Будни"); 
+    }
+}
