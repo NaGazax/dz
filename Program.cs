@@ -1,13 +1,9 @@
-﻿Console.WriteLine("Введите номер дня недели: ");
-int dayNumber = Convert.ToInt32(Console.ReadLine());
-if ( dayNumber >= 1 && dayNumber <= 7 );
+﻿Console.Write("Введите число:");
+string firstNumber = Console.ReadLine();  
+int secondNumber = Convert.ToInt32(firstNumber);
+if (secondNumber < 100) 
 {
-    if (dayNumber >= 6 && dayNumber <= 7)
-    {
-       Console.WriteLine("Выходной"); 
-    }
-    else 
-    { 
-       Console.WriteLine("Будни"); 
-    }
-}
+    Console.WriteLine("Неверное число");
+}      
+Console.WriteLine(firstNumber[2]);
+    
